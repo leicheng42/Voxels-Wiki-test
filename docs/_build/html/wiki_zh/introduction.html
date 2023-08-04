@@ -1,0 +1,665 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="zh-CN" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>介绍 &#8212; Voxels Wiki by Raiden INST</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'wiki_zh/introduction';</script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="快速开始" href="quick_start.html" />
+    <link rel="prev" title="雷电所的Voxel文档" href="../index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="zh-CN"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.jpg" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.jpg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    雷电所的Voxel文档
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Home</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">介绍</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">快速开始</a></li>
+<li class="toctree-l1"><a class="reference internal" href="RaidenINST.html">Voxels中的雷电所</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Voxels_library.html">Voxels 仓库</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_to_library.html">提交到资产库</a></li>
+<li class="toctree-l1"><a class="reference internal" href="virtual_reality.html">虚拟现实</a></li>
+<li class="toctree-l1"><a class="reference internal" href="the_world.html">Voxels 世界</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/leicheng42/Cryptovoxels-Wiki" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="源码库"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/leicheng42/Cryptovoxels-Wiki/blob/main/wiki_zh/introduction.md?plain=1" target="_blank"
+   class="btn btn-sm btn-source-file-button dropdown-item"
+   title="Show source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="btn__text-container">Show source</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/leicheng42/Cryptovoxels-Wiki/edit/main/wiki_zh/introduction.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/leicheng42/Cryptovoxels-Wiki/issues/new?title=Issue%20on%20page%20%2Fwiki_zh/introduction.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="创建议题"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="下载此页面">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/wiki_zh/introduction.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="下载源文件"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="列印成 PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="全屏模式"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索" aria-label="搜索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>介绍</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> 目录 </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">介绍</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#voxels">体素（Voxels）</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cryptovoxels-vs-voxels">1.1 Cryptovoxels vs Voxels</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">快捷链接</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parcels">地块(Parcels)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#players">玩家(Players)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#features">功能(Features)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scrpting">脚本编程(Scrpting)</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="introduction">
+<span id="id1"></span><h1>介绍<a class="headerlink" href="#introduction" title="此标题的永久链接">#</a></h1>
+</section>
+<section id="voxels">
+<h1>体素（Voxels）<a class="headerlink" href="#voxels" title="此标题的永久链接">#</a></h1>
+<section id="cryptovoxels-vs-voxels">
+<h2>1.1 Cryptovoxels vs Voxels<a class="headerlink" href="#cryptovoxels-vs-voxels" title="此标题的永久链接">#</a></h2>
+<p>Cryptovoxels 是 Voxels 的旧名字。<a class="reference external" href="http://Cryptovoxels.com">Cryptovoxels.com</a> 会重定向到 <a class="reference external" href="http://voxels.com">voxels.com</a> ， Cryptovoxels 于 2022 年 5 月 3 日更名为 Voxels</p>
+<p>Crypto voxels 加密 体素，“加密”一词在大家看来可能具有负面含义，同时也为了将用户群体扩展到更广泛的群体，所以开发公司将其更名为 Voxels 。<a class="reference external" href="https://www.globenewswire.com/news-release/2022/05/03/2434939/0/en/Cryptovoxels-Is-Rebranding-to-Voxels-on-May-3-2022.html">参考链接</a></p>
+</section>
+<section id="id2">
+<h2>快捷链接<a class="headerlink" href="#id2" title="此标题的永久链接">#</a></h2>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Tutorials</p></th>
+<th class="head"><p>/</p></th>
+<th class="head"><p>Scripting examples</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="Parcels/5.%F0%9F%93%A6%20Make%20a%20vox-model%20%E5%88%B6%E4%BD%9C%20vox%E6%A8%A1%E5%9E%8B.html#make-a-vox-model"><span class="std std-ref">Make a Vox Model</span></a></p></td>
+<td><p>/</p></td>
+<td><p><a class="reference external" href="https://wiki.cryptovoxels.com/Scripting/Examples/Move-rotate-scale-Feature">Move/rotate/scale Feature</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Players/2.%20Make%20a%20wearable%20%E5%88%B6%E4%BD%9C%E7%A9%BF%E6%88%B4%E5%93%81.html#create-a-wearable"><span class="std std-ref">制作穿戴品</span></a></p></td>
+<td><p>/</p></td>
+<td><p><a class="reference external" href="https://wiki.cryptovoxels.com/Scripting/Examples/Click-trigger">Click trigger</a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://wiki.cryptovoxels.com/Player_customization/Costume_tab">Edit costume</a></p></td>
+<td><p>/</p></td>
+<td><p><a class="reference external" href="https://wiki.cryptovoxels.com/Scripting/Examples/Turn">Turn vox to face player</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://wiki.cryptovoxels.com/Player_customization/Avatar_skin">Edit skin</a></p></td>
+<td><p>/</p></td>
+<td><p><a class="reference external" href="https://wiki.cryptovoxels.com/Scripting/Examples/TicTacToe">Tic Tac Toe</a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Players/4.%20Usernames%20%E7%94%A8%E6%88%B7%E5%90%8D.html#edit-username"><span class="std std-ref">Edit Username</span></a></p></td>
+<td><p>/</p></td>
+<td><p><a class="reference external" href="https://wiki.cryptovoxels.com/Scripting/Examples/keypad_six_digits">Keypad Six Digits</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="Parcels/1.%20%F0%9F%9B%92%20Buy%20a%20parcel%20%E8%B4%AD%E4%B9%B0%E5%9C%B0%E5%9D%97.html#buy-a-parcel"><span class="std std-ref">Buy a parcel</span></a></p></td>
+<td><p>/</p></td>
+<td><p><a class="reference external" href="https://wiki.cryptovoxels.com/Scripting/Examples/welcome_message">Welcome/Goobye message</a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="Players/3.%20Buy%20a%20wearable%20%E8%B4%AD%E4%B9%B0%E7%A9%BF%E6%88%B4%E5%93%81.html#buy-a-wearable"><span class="std std-ref">Buy a Wearable</span></a></p></td>
+<td><p>/</p></td>
+<td><p><a class="reference external" href="https://wiki.cryptovoxels.com/Scripting/Examples/Simple-Door">A simple door</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="parcels">
+<h2>地块(Parcels)<a class="headerlink" href="#parcels" title="此标题的永久链接">#</a></h2>
+<p>地块是位于 Cryptovoxels 虚拟宇宙中的一块土地。
+每个地块位于不同的<a class="reference external" href="https://wiki.cryptovoxels.com/en/The-world">邻居</a>并且具有不同的尺寸。</p>
+<p><img alt="parcel-empty.gif" src="https://wiki.cryptovoxels.com/buyingparcel/parcel-empty.gif" /></p>
+<p>有关您可以在地块上建造什么的信息，请访问<a class="reference external" href="https://wiki.cryptovoxels.com/en/Parcels/Building">此处</a>。
+您还可以使用免费的 <a class="reference external" href="https://wiki.cryptovoxels.com/Spaces">spaces</a> 预先进行实验。</p>
+</section>
+<section id="players">
+<h2>玩家(Players)<a class="headerlink" href="#players" title="此标题的永久链接">#</a></h2>
+<p>在虚拟世界中，您有多种方法可以自定义您的角色。</p>
+</section>
+<section id="features">
+<h2>功能(Features)<a class="headerlink" href="#features" title="此标题的永久链接">#</a></h2>
+<p>要放置功能，您必须位于具有建筑权的地块中，然后按 TAB 键。</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Feature</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Feature</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><img width='16' src='https://www.cryptovoxels.com/icons/audio.png'/>  <a class="reference external" href="https://wiki.cryptovoxels.com/features/audio">Audio</a></p></td>
+<td><p>播放 mp3</p></td>
+<td><p><img width='16' src='https://www.cryptovoxels.com/icons/audio.png' /> <a class="reference external" href="https://wiki.cryptovoxels.com/features/boombox">Boombox</a></p></td>
+<td><p>让用户直播音频</p></td>
+</tr>
+<tr class="row-odd"><td><p><img width='16' src='https://www.cryptovoxels.com/icons/button.png' /> <a class="reference external" href="https://wiki.cryptovoxels.com/features/button">Button</a></p></td>
+<td><p>脚本使用</p></td>
+<td><p><img width='16' src='https://www.cryptovoxels.com/icons/call-bell.png' /> <a class="reference external" href="https://wiki.cryptovoxels.com/features/call-bell">Call Bell</a></p></td>
+<td><p>来自访客的私信：警告：<strong>Nerfed</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><img width='16' src='https://www.cryptovoxels.com/icons/image.png' />  <a class="reference external" href="https://wiki.cryptovoxels.com/features/image">Image</a></p></td>
+<td><p>来自 URL 的图片</p></td>
+<td><p><img width='16' src='https://www.cryptovoxels.com/icons/lantern.png' />  <a class="reference external" href="https://wiki.cryptovoxels.com/features/lantern">Lantern</a></p></td>
+<td><p>灯光发射器</p></td>
+</tr>
+<tr class="row-odd"><td><p><img width='16' src='https://www.cryptovoxels.com/icons/megavox.png' /> <a class="reference external" href="https://wiki.cryptovoxels.com/features/megavox">Megavox</a></p></td>
+<td><p>大型的 <code class="docutils literal notranslate"><span class="pre">.vox</span></code> 模型</p></td>
+<td><p><img width='16' src='https://www.cryptovoxels.com/icons/nft-image.png'  /> <a class="reference external" href="https://wiki.cryptovoxels.com/features/nft-image">NFT Image</a></p></td>
+<td><p>你自己的 NFTs</p></td>
+</tr>
+<tr class="row-even"><td><p><img width='16' src='https://www.cryptovoxels.com/icons/nft-model.png'  /> <a class="reference external" href="https://wiki.cryptovoxels.com/features/nft-model">NFT Model</a></p></td>
+<td><p>你的 3d vox NFTs</p></td>
+<td><p><img width='16' src='https://www.cryptovoxels.com/icons/particle.png'  /> <a class="reference external" href="https://wiki.cryptovoxels.com/features/particles">Particles</a></p></td>
+<td><p>添加粒子发射器</p></td>
+</tr>
+<tr class="row-odd"><td><p><img width='16' src='https://www.cryptovoxels.com/icons/polytext.png' /> <a class="reference external" href="https://wiki.cryptovoxels.com/features/polytext">Polytext</a></p></td>
+<td><p>3D 文本</p></td>
+<td><p><img width='16' src='https://www.cryptovoxels.com/icons/richtext.png' /> <a class="reference external" href="https://wiki.cryptovoxels.com/features/richtext">Richtext</a></p></td>
+<td><p>多行文本</p></td>
+</tr>
+<tr class="row-even"><td><p><img width='16' src='https://www.cryptovoxels.com/icons/screen.png' /> <a class="reference external" href="https://wiki.cryptovoxels.com/features/screen">Screen</a></p></td>
+<td><p>Live presenting screen现场演示画面</p></td>
+<td><p><img width='16' src='https://www.cryptovoxels.com/icons/sign.png' /> <a class="reference external" href="https://wiki.cryptovoxels.com/features/sign">Sign</a></p></td>
+<td><p>单行文本</p></td>
+</tr>
+<tr class="row-odd"><td><p><img width='16' src='https://www.cryptovoxels.com/icons/text-input.png' />  <a class="reference external" href="https://wiki.cryptovoxels.com/features/text-input">Text Input</a></p></td>
+<td><p>让用户输入文本进行脚本编写</p></td>
+<td><p><img width='16' src='https://www.cryptovoxels.com/icons/video.png' /> <a class="reference external" href="https://wiki.cryptovoxels.com/features/video">Video</a></p></td>
+<td><p>添加短视频</p></td>
+</tr>
+<tr class="row-even"><td><p><img width='16' src='https://www.cryptovoxels.com/icons/vid-screen.png' /> <a class="reference external" href="https://wiki.cryptovoxels.com/features/vid-screen">VidScreen</a></p></td>
+<td><p>可编程 64x64 屏幕</p></td>
+<td><p><img width='16' src='https://www.cryptovoxels.com/icons/vox-model.png' /> <a class="reference external" href="https://wiki.cryptovoxels.com/features/vox-model">.VOX</a></p></td>
+<td><p>小 .vox 模型</p></td>
+</tr>
+<tr class="row-odd"><td><p><img width='16' src='https://www.cryptovoxels.com/icons/youtube.png' /> <a class="reference external" href="https://wiki.cryptovoxels.com/features/youtube">Youtube</a></p></td>
+<td><p>内嵌 YouTube 视频</p></td>
+<td><p><img width='16' src='https://www.cryptovoxels.com/icons/spawn-point.png' /> <a class="reference external" href="https://wiki.cryptovoxels.com/features/spawn-point">Spawn-point</a></p></td>
+<td><p>出生点</p></td>
+</tr>
+<tr class="row-even"><td><p><img width='16' src='https://www.cryptovoxels.com/icons/cube.png' /> <a class="reference external" href="https://wiki.cryptovoxels.com/features/cube">Cube</a></p></td>
+<td><p>一个有纹理的立方体</p></td>
+<td><p><img width='16' src='https://www.cryptovoxels.com/icons/portal.png' /> <a class="reference external" href="https://wiki.cryptovoxels.com/features/portal">Portal</a></p></td>
+<td><p>使用 womps 的传送门</p></td>
+</tr>
+<tr class="row-odd"><td><p><img width='16' src='https://www.cryptovoxels.com/icons/poap.png' /> <a class="reference external" href="https://wiki.cryptovoxels.com/features/POAP-Dispenser">POAP Dispenser</a></p></td>
+<td><p>向活动访客提供 POAP。</p></td>
+<td><p><img width='16' src='https://www.cryptovoxels.com/icons/slider-input.png' /> <a class="reference external" href="https://wiki.cryptovoxels.com/features/slider-input">滑块输入</a></p></td>
+<td><p>允许用户在范围内输入数字</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="scrpting">
+<h2>脚本编程(Scrpting)<a class="headerlink" href="#scrpting" title="此标题的永久链接">#</a></h2>
+<p>这里是关于 Scripting 系统的文档，这里是一些关于 Animation-API 的文档动画 API。脚本系统可用于制作动画并使您的地块具有交互性。脚本在您的浏览器中运行（使用 <a class="reference external" href="http://untrusted.Voxels.com">untrusted.Voxels.com</a> 上的 webworker ），但如果您在地块设置下启用“网格脚本” - 它们将在 The Grid 我们的多人游戏服务器上运行。</p>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">上一页</p>
+        <p class="prev-next-title">雷电所的Voxel文档</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="quick_start.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">快速开始</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> 目录
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">介绍</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#voxels">体素（Voxels）</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cryptovoxels-vs-voxels">1.1 Cryptovoxels vs Voxels</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">快捷链接</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parcels">地块(Parcels)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#players">玩家(Players)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#features">功能(Features)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scrpting">脚本编程(Scrpting)</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+作者： Lei Cheng
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023, 雷电所 RaidenINST.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
