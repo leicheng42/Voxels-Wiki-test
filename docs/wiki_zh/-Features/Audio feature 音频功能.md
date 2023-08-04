@@ -231,21 +231,6 @@ Content 2
 ::::
 
 
-::::::{myst-example}
-
-::::{tab-set}
-
-:::{tab-item} Label1
-Content 1
-:::
-
-:::{tab-item} Label2
-Content 2
-:::
-
-::::
-
-::::::
 
 # Scripting Methods
 # Scripting Methods {.tabset}

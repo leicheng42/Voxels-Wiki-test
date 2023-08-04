@@ -603,27 +603,26 @@ document.write(`
 </ul>
 <section id="example">
 <h3>example<a class="headerlink" href="#example" title="此标题的永久链接">#</a></h3>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span>feature.getNftData(console.log)
-/* returns: 
-{
-animation_original_url: &quot;https://ipfsga...&quot;
-animation_url: &quot;https://stora...&quot;
-asset_contract: {...}
-...
-}
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">feature</span><span class="p">.</span><span class="nx">getNftData</span><span class="p">(</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">)</span>
+<span class="cm">/* returns: </span>
+<span class="cm">{</span>
+<span class="cm">animation_original_url: &quot;https://ipfsga...&quot;</span>
+<span class="cm">animation_url: &quot;https://stora...&quot;</span>
+<span class="cm">asset_contract: {...}</span>
+<span class="cm">...</span>
+<span class="cm">}</span>
+<span class="cm">*/</span>
 </pre></div>
 </div>
 </section>
 <section id="example-2">
 <h3>example 2<a class="headerlink" href="#example-2" title="此标题的永久链接">#</a></h3>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span>
-function showContractAddress(data){
- console.log(data.asset_contract.address) 
-}
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span><span class="w"> </span><span class="nx">showContractAddress</span><span class="p">(</span><span class="nx">data</span><span class="p">){</span>
+<span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">asset_contract</span><span class="p">.</span><span class="nx">address</span><span class="p">)</span><span class="w"> </span>
+<span class="p">}</span>
 
-feature.getNftData(showContractAddress)
-/* returns: 0x1das1rs6dfv...
-
+<span class="nx">feature</span><span class="p">.</span><span class="nx">getNftData</span><span class="p">(</span><span class="nx">showContractAddress</span><span class="p">)</span>
+<span class="cm">/* returns: 0x1das1rs6dfv... */</span>
 </pre></div>
 </div>
 </section>
